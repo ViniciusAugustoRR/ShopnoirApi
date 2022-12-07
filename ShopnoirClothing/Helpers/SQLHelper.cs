@@ -1,4 +1,7 @@
-﻿using ShopnoirClothing.Models;
+﻿using Microsoft.AspNetCore.Mvc.Formatters;
+using Newtonsoft.Json;
+using ShopnoirClothing.Models;
+using System.Data;
 using System.Data.SqlClient;
 using System.Security.Cryptography.X509Certificates;
 
@@ -20,30 +23,21 @@ namespace ShopnoirClothing.Helpers
 
         }
 
-        public List<Item> RunProcedureWithReturn(string procedure)
+        public string RunProcedureWithReturn(string procedure)
         {
             try {
                 Open();
                 var command = new SqlCommand(procedure, sqlConnection);
                 command.CommandType = System.Data.CommandType.StoredProcedure;
-
-                SqlDataReader reader = command.ExecuteReader();
-                Item item;
-                List<Item> list = new List<Item>();
-                while(reader.Read())
-                {
-                    item = new Item()
-                    {
-                        Id = int.Parse(reader["ID"].ToString()),
-                        Title = reader["TITLE"].ToString(),
-                        Description = reader["DESCR"].ToString(),
-                        Price = double.Parse(reader["PRICE"].ToString())
-                    };
-                    list.Add(item);
-                }
-
+                
+                SqlDataAdapter da = new SqlDataAdapter(command);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+               
+                var jsonObject = JsonConvert.SerializeObject(ds.Tables[0]);
+                
                 Close();
-                return list;
+                return jsonObject.ToString();
             }
             catch(Exception ex)
             {

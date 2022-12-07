@@ -18,6 +18,13 @@ namespace ShopnoirClothing.Controllers
             test();
         }
 
+        [HttpPost("Offers")]
+        public async Task<ActionResult> Offers()
+        {
+
+            return BadRequest();
+        }
+
         public void test()
         {
             var x = OffersDAO.GetAllOffers();

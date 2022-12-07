@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "JM5ToSxhauvVDcgi5aD2dlLHhaU/IBDlGCmWvPSwJRdlvp5wJyIDxeLHUTQLuSg4zOvdRqxoM9NEmB/DnRX4yQ==",
+  "dgSpecHash": "bhvWpJP1yccYRb+mxZHXuFI7k/foj/hxYjkDcariVFTf7OLsw0RNTG0dP7pbNGzDcGM5Eim15iDMMAe32oVMHw==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\ShopNoirApp\\ShopnoirClothing\\ShopnoirClothing.csproj",
+  "projectFilePath": "D:\\Projetos\\ShopNoir\\ShopnoirApi\\ShopnoirClothing\\ShopnoirClothing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vinicius Rios\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Vinicius Rios\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Vinicius Rios\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Vinicius Rios\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Vinicius Rios\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\Vinicius Rios\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\Vinicius Rios\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Vinicius Rios\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

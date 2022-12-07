@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\ShopNoirApp\\ShopnoirClothing\\ShopnoirClothing.csproj": {}
+    "D:\\Projetos\\ShopNoir\\ShopnoirApi\\ShopnoirClothing\\ShopnoirClothing.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\ShopNoirApp\\ShopnoirClothing\\ShopnoirClothing.csproj": {
+    "D:\\Projetos\\ShopNoir\\ShopnoirApi\\ShopnoirClothing\\ShopnoirClothing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\ShopNoirApp\\ShopnoirClothing\\ShopnoirClothing.csproj",
+        "projectUniqueName": "D:\\Projetos\\ShopNoir\\ShopnoirApi\\ShopnoirClothing\\ShopnoirClothing.csproj",
         "projectName": "ShopnoirClothing",
-        "projectPath": "D:\\Projetos\\ShopNoirApp\\ShopnoirClothing\\ShopnoirClothing.csproj",
+        "projectPath": "D:\\Projetos\\ShopNoir\\ShopnoirApi\\ShopnoirClothing\\ShopnoirClothing.csproj",
         "packagesPath": "C:\\Users\\Vinicius Rios\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\ShopNoirApp\\ShopnoirClothing\\obj\\",
+        "outputPath": "D:\\Projetos\\ShopNoir\\ShopnoirApi\\ShopnoirClothing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

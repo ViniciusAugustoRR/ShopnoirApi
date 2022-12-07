@@ -1,4 +1,5 @@
-﻿using ShopnoirClothing.Helpers;
+﻿using Newtonsoft.Json;
+using ShopnoirClothing.Helpers;
 using ShopnoirClothing.Models;
 
 namespace ShopnoirClothing.DB
@@ -14,7 +15,8 @@ namespace ShopnoirClothing.DB
 
         public List<Item> GetAllOffers() 
         {
-            var list = Helper.RunProcedureWithReturn("SN_GETALLOFFERS");
+            var json = Helper.RunProcedureWithReturn("SN_GETALLOFFERS");
+            List<Item> list = JsonConvert.DeserializeObject<List<Item>>(json);
             return list;
         }
     
